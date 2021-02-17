@@ -1,0 +1,26 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 5fr 20fr 5fr;
+    grid-gap: 10px;
+    height: 720px;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.wrapper * {
+    background: #99bbcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1px;
+    margin-right: 1px;
+}
