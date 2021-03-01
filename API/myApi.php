@@ -28,11 +28,29 @@
                         print "<br>server tijd: " . date("h:i:s",$myTime);
                     break;
 
-                 // hier moet jij zelf code schrijven
+                case "css keuze":
+                    print " <br> hier moet jij zelf code schrijven";
+                    ?>
+                    <style type="text/css">
+                    body {
+                      background-color: #333;
+                      color: white;
+                      margin: 25px 25px 25px 25px;
+                      font-size: 40px;
+                    }
+                    </style>
+                    <?php
+
+                    echo '<script language="javascript">';
+                    echo 'alert("Dit is een alert")';
+                    echo '</script>';
+
+                    break;
 
                 case "easter egg":
                     print " <br> hier moet jij zelf code schrijven";
                     break;
+
                 case "bedenk zelf een code":
 
                 $firstday = date('l - d/m/Y', strtotime("this week"));
@@ -42,6 +60,8 @@
                   // einde eigen code
                 default:
                     print "<h3>please read the manual for valid requests &#128540;</h3>";
+
+
             }
         }
 ?>
